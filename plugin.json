@@ -9,5 +9,5 @@
     "type": "comic",
     "locale": "en"
   },
-  "script": "source.js"
+  "script": "https://raw.githubusercontent.com/canoriss15-creator/vbook-plugins/refs/heads/main/source.js"
 }
