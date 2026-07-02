@@ -1,0 +1,13 @@
+[
+  {
+    "name": "HentaiNexus",
+    "author": "Developer",
+    "version": 1,
+    "source": "https://hentainexus.com",
+    "regexp": "hentainexus\\.com",
+    "description": "Plugin HentaiNexus",
+    "type": "comic",
+    "locale": "en",
+    "script": "source.js"
+  }
+]
