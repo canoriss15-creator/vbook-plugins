@@ -19,7 +19,7 @@ function getHome(page) {
         }
         return Response.success(listBook);
     }
-    return Response.error("Lỗi kết nối");
+    return Response.error("Lỗi kết nối trang chủ");
 }
 
 function search(keyword, page) {
@@ -41,7 +41,7 @@ function search(keyword, page) {
         }
         return Response.success(listBook);
     }
-    return Response.error("Lỗi tìm kiếm");
+    return Response.error("Lỗi tìm kiếm truyện");
 }
 
 function getDetail(url) {
@@ -52,7 +52,7 @@ function getDetail(url) {
         var readLink = doc.select("a.button.is-primary").attr("href");
         if (readLink) {
             chapters.push({
-                name: "Chương 1",
+                name: "Chương 1 (Full)",
                 link: readLink,
                 host: BASE_URL
             });
@@ -61,11 +61,11 @@ function getDetail(url) {
             name: doc.select("h1.title").text(),
             cover: doc.select(".image-container img").attr("src"),
             author: doc.select("table.table").text() || "Unknown",
-            description: "Mô tả truyện",
+            description: "Truyện tranh HentaiNexus",
             chapters: chapters
         });
     }
-    return Response.error("Lỗi lấy chi tiết");
+    return Response.error("Lỗi tải chi tiết truyện");
 }
 
 function getChap(url) {
@@ -82,5 +82,5 @@ function getChap(url) {
         }
         return Response.success(images);
     }
-    return Response.error("Lỗi tải chương");
+    return Response.error("Lỗi tải chương truyện");
 }
