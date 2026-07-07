@@ -5,9 +5,9 @@
     "version": 1,
     "source": "https://hentainexus.com",
     "regexp": "hentainexus\\.com",
-    "description": "Plugin HentaiNexus",
+    "description": "Plugin đọc truyện HentaiNexus",
     "type": "comic",
     "locale": "en",
-    "script": "https://raw.githubusercontent.com/canoriss15-creator/vbook-plugins/refs/heads/main/source.js"
+    "script": "https://raw.githubusercontent.com/canoriss15-creator/vbook-plugins/main/source.js"
   }
 ]
